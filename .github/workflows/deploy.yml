@@ -5,6 +5,7 @@ on:
     branches:
       - master
       - main
+      - alfolio-working
     paths:
       - "assets/**"
       - "_sass/**"
