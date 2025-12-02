@@ -745,6 +745,20 @@ footer.sticky-bottom {
     list-style: none;
     padding: 0;
     margin-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: flex-start;
+
+    li {
+      flex: 0 0 calc(50% - 1rem);
+      max-width: calc(50% - 1rem);
+
+      @media (max-width: 768px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
 
     li .publication-item {
       margin-bottom: 2rem;
@@ -830,6 +844,28 @@ footer.sticky-bottom {
           display: none; // Hide original title since it's in the overlay
         }
 
+        .author-journal-container {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          gap: 15px;
+        }
+
+        .author-journal-info {
+          flex: 1;
+        }
+
+        .abstract-button-container {
+          flex-shrink: 0;
+          display: flex;
+          align-items: flex-start;
+          padding-top: 2px;
+
+          .btn {
+            white-space: nowrap;
+          }
+        }
+
         .author {
           font-size: 0.95em;
           margin-bottom: 8px;
@@ -866,15 +902,6 @@ footer.sticky-bottom {
           color: var(--global-text-color-light);
           margin-bottom: 5px;
           font-style: italic;
-        }
-
-        .links {
-          margin-top: 15px;
-
-          .btn {
-            margin-right: 8px;
-            margin-bottom: 5px;
-          }
         }
 
         .abbr {
