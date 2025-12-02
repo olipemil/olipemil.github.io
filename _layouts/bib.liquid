@@ -23,21 +23,23 @@
       <!-- Title overlay -->
       <div class="title-overlay">
         {% assign primary_link = null %}
-        {% if entry.pdf %}
-          {% if entry.pdf contains '://' %}
-            {% assign primary_link = entry.pdf %}
-          {% else %}
-            {% assign primary_link = entry.pdf | prepend: '/assets/pdf/' | relative_url %}
-          {% endif %}
-        {% elsif entry.doi %}
-          {% assign primary_link = 'https://doi.org/' | append: entry.doi %}
-        {% elsif entry.arxiv %}
-          {% assign primary_link = 'http://arxiv.org/abs/' | append: entry.arxiv %}
+        {% if entry.url %}
+          {% assign primary_link = entry.url %}
         {% elsif entry.html %}
           {% if entry.html contains '://' %}
             {% assign primary_link = entry.html %}
           {% else %}
             {% assign primary_link = entry.html | prepend: '/assets/html/' | relative_url %}
+          {% endif %}
+        {% elsif entry.doi %}
+          {% assign primary_link = 'https://doi.org/' | append: entry.doi %}
+        {% elsif entry.arxiv %}
+          {% assign primary_link = 'http://arxiv.org/abs/' | append: entry.arxiv %}
+        {% elsif entry.pdf %}
+          {% if entry.pdf contains '://' %}
+            {% assign primary_link = entry.pdf %}
+          {% else %}
+            {% assign primary_link = entry.pdf | prepend: '/assets/pdf/' | relative_url %}
           {% endif %}
         {% endif %}
 
