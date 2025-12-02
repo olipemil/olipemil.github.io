@@ -837,7 +837,7 @@ footer.sticky-bottom {
 
       // Publication details section
       .publication-details {
-        padding: 20px;
+        padding: 15px 20px 10px 20px;
         flex: 1;
 
         .title {
@@ -868,7 +868,7 @@ footer.sticky-bottom {
 
         .author {
           font-size: 0.95em;
-          margin-bottom: 8px;
+          margin-bottom: 4px;
           color: var(--global-text-color);
 
           a {
@@ -900,7 +900,7 @@ footer.sticky-bottom {
         .periodical {
           font-size: 0.9em;
           color: var(--global-text-color-light);
-          margin-bottom: 5px;
+          margin-bottom: 2px;
           font-style: italic;
         }
 

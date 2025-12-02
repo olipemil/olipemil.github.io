@@ -225,7 +225,15 @@
       <!-- Abstract button on the right -->
       <div class="abstract-button-container">
         {% if entry.abstract %}
-          <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+          <a class="abstract btn btn-sm z-depth-0" role="button" onclick="
+            var element = $(this);
+            var target = element.closest('.publication-details').find('.abstract.hidden');
+            if (target.hasClass('open')) {
+              target.removeClass('open');
+            } else {
+              target.addClass('open');
+            }
+          ">Abs</a>
         {% endif %}
       </div>
     </div>
