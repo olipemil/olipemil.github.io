@@ -1,0 +1,34 @@
+<div class="col">
+  <div class="visualization-card">
+    <div class="visualization-preview-container">
+      <!-- Static preview image -->
+      {% if visualization.img %}
+        <img class="visualization-preview" src="{{ visualization.img | relative_url }}" alt="{{ visualization.title }}">
+      {% endif %}
+
+      <!-- Animated GIF that appears on hover -->
+      {% if visualization.gif %}
+        <img class="visualization-gif" src="{{ visualization.gif | relative_url }}" alt="{{ visualization.title }} animation">
+      {% endif %}
+
+      <!-- Hover overlay with links -->
+      <div class="visualization-overlay">
+        <div class="visualization-links">
+          {% if visualization.interactive_url %}
+            <a href="{{ visualization.interactive_url }}" class="visualization-link interactive-link" target="_blank">
+              <i class="fa-solid fa-play"></i> Launch Interactive
+            </a>
+          {% endif %}
+          <a href="{% if visualization.redirect %}{{ visualization.redirect }}{% else %}{{ visualization.url | relative_url }}{% endif %}" class="visualization-link explanation-link">
+            <i class="fa-solid fa-book"></i> View Explanation
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Title at bottom -->
+    <div class="visualization-title">
+      <h3>{{ visualization.title }}</h3>
+    </div>
+  </div>
+</div>
