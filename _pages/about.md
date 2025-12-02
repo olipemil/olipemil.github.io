@@ -6,7 +6,7 @@ subtitle: Tayebati Postdoctoral Fellow at MIT
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: emily2025.jpg
   image_circular: false # crops the image to make it circular
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
@@ -164,7 +164,7 @@ latest_posts:
 
 </style>
 
-Ph.D. Materials Science and Engineering and Scientific Computing at University of Michigan
+Ph.D. Materials Science and Engineering and Scientific Computing at University of Michigan;
 B.S. Physics at Idaho State University
 
 I am a postdoc working at MIT with Prof. Tess Smidt and Prof. Jeffery Grossman to build better representations of quantum materials data. This increases our chemical understanding of materials properties while improving machine learning architectures for simplified training.
