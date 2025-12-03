@@ -3,8 +3,8 @@ layout: page
 title: "Cogito crystal bond with bond energy distribution"
 description: "Interactive visualization of crystal bonding patterns and energy distributions using COGITO analysis"
 img: emily2025.jpg
-gif: emily2025.jpg
-interactive_url: https://viz.whsunresearch.group/cogito/
+gif: publication_preview/silicon_preview.png
+interactive_url: https://viz.whsunresearch.group/cogito
 category: materials
 importance: 1
 selected: true
