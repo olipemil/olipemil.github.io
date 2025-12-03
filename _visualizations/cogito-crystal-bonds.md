@@ -6,7 +6,7 @@ img: visualization_preview/cogito_bond_static.png
 gif: visualization_preview/cogito_bond_output.gif
 interactive_url: https://viz.whsunresearch.group/cogito
 category: materials
-importance: 2
+importance: 1
 selected: true
 ---
 

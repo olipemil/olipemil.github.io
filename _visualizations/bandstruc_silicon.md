@@ -6,7 +6,7 @@ img: visualization_preview/bandstruc_static.png
 gif: visualization_preview/bandstruc.gif
 interactive_url: https://viz.whsunresearch.group/tb
 category: materials
-importance: 1
+importance: 2
 selected: true
 ---
 
