@@ -786,22 +786,25 @@ footer.sticky-bottom {
     height: 100%;
     background: rgba(0, 0, 0, 0.8);
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     opacity: 0;
     transition: opacity 0.3s ease;
     pointer-events: none;
+    padding-top: 20px;
   }
 
   .visualization-links {
     display: flex;
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 90%;
   }
 
   .visualization-link {
-    padding: 12px 24px;
+    padding: 12px 20px;
     border-radius: 6px;
     text-decoration: none;
     font-weight: 600;
@@ -809,8 +812,9 @@ footer.sticky-bottom {
     display: flex;
     align-items: center;
     gap: 8px;
-    min-width: 180px;
+    flex: 1;
     justify-content: center;
+    font-size: 0.9em;
 
     &.interactive-link {
       background-color: var(--global-theme-color);

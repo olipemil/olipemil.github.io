@@ -3,12 +3,22 @@
     <div class="visualization-preview-container">
       <!-- Static preview image -->
       {% if visualization.img %}
-        <img class="visualization-preview" src="{{ visualization.img | relative_url }}" alt="{{ visualization.title }}">
+        {% if visualization.img contains '://' %}
+          <img class="visualization-preview" src="{{ visualization.img }}" alt="{{ visualization.title }}">
+        {% else %}
+          {% assign img_path = visualization.img | prepend: '/assets/img/' %}
+          <img class="visualization-preview" src="{{ img_path | relative_url }}" alt="{{ visualization.title }}">
+        {% endif %}
       {% endif %}
 
       <!-- Animated GIF that appears on hover -->
       {% if visualization.gif %}
-        <img class="visualization-gif" src="{{ visualization.gif | relative_url }}" alt="{{ visualization.title }} animation">
+        {% if visualization.gif contains '://' %}
+          <img class="visualization-gif" src="{{ visualization.gif }}" alt="{{ visualization.title }} animation">
+        {% else %}
+          {% assign gif_path = visualization.gif | prepend: '/assets/img/' %}
+          <img class="visualization-gif" src="{{ gif_path | relative_url }}" alt="{{ visualization.title }} animation">
+        {% endif %}
       {% endif %}
 
       <!-- Hover overlay with links -->
