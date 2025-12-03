@@ -10,5 +10,6 @@ importance: 2
 selected: true
 ---
 
-## Silicon band structure visualization
+## Projected COHP bonding on GaAs band structure visualization
 
+This page is still under development! Please check back later for the describtion. 
