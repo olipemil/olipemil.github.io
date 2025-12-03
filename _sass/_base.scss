@@ -824,6 +824,7 @@ footer.sticky-bottom {
         color: var(--global-theme-color);
         border-bottom: 4px solid var(--global-theme-color);
         border-right: 3px solid var(--global-theme-color);
+        text-decoration: underline;
       }
     }
 
@@ -836,6 +837,7 @@ footer.sticky-bottom {
         color: var(--global-bg-color);
         border-bottom: 4px solid var(--global-bg-color);
         border-left: 3px solid var(--global-bg-color);
+        text-decoration: underline;
       }
     }
   }
