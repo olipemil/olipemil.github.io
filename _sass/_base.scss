@@ -801,7 +801,7 @@ footer.sticky-bottom {
   }
 
   .visualization-link {
-    padding: 15px 20px;
+    padding: 10px 20px;
     border-radius: 0;
     text-decoration: none;
     font-weight: 600;
@@ -813,26 +813,25 @@ footer.sticky-bottom {
     justify-content: center;
     font-size: 0.9em;
     border: none;
+    background: rgba(0, 0, 0, 0);
 
     &.interactive-link {
       background-color: var(--global-theme-color);
-      color: white;
+      color: rgba(0, 0, 0, 0);
 
       &:hover {
-        background-color: rgba(255, 255, 255, 0.9);
+        background-color: rgba(0, 0, 0, 0);
         color: var(--global-theme-color);
-        text-decoration: none;
       }
     }
 
     &.explanation-link {
-      background-color: rgba(255, 255, 255, 0.9);
+      background-color: rgba(0, 0, 0, 0);
       color: var(--global-theme-color);
 
       &:hover {
         background-color: var(--global-theme-color);
-        color: white;
-        text-decoration: none;
+        color: rgba(0, 0, 0, 0);
       }
     }
   }
