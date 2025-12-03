@@ -1,6 +1,6 @@
 ---
 layout: page
-title: visualizations
+title: Visualizations
 permalink: /visualizations/
 description: Interactive visualizations and data explorations.
 nav: true
