@@ -1,0 +1,8 @@
+<div class="visualizations">
+  <div class="row row-cols-1 row-cols-md-2">
+    {% assign selected_visualizations = site.visualizations | where: "selected", true | sort: "importance" %}
+    {% for visualization in selected_visualizations %}
+      {% include visualizations.liquid %}
+    {% endfor %}
+  </div>
+</div>

@@ -7,6 +7,7 @@ gif: emily2025.jpg
 interactive_url: https://viz.whsunresearch.group/cogito/
 category: materials
 importance: 1
+selected: true
 ---
 
 ## COGITO Crystal Bonding Visualization
